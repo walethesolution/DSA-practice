@@ -119,3 +119,20 @@ console.log(sumPairs(numbersArray, N));
 //   return result;
 // }
 // console.log(intersection(a, b));
+
+// Write a function that returns the maximum value in an array
+
+const numbersArray = [10, 2, 4, 50, 5, 70, 80];
+
+function findMax(arr, start, end) {
+  let max = 0;
+
+  for (let i = start; i < end; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+console.log(findMax(numbersArray, 2, numbersArray.length));
